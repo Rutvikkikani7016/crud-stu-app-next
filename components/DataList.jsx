@@ -18,11 +18,11 @@ const getDatas = async () => {
 
 export default async function DataList() {
 
-    const { datas } = await getDatas();
+    const { details } = await getDatas();
 
     return (<>
-        {datas.map(data => (
-            <div className="p-4 border border-slate-300 my-3 flex justify-between items-start">
+        {details.map(data => (
+            <div className="p-4 border border-slate-300 my-3 flex justify-between items-start" key={data.id}>
                 <div>
                     <h2 className="font-bold text=3xl">{data.name}</h2>
                     <div>Email:- {data.email}</div>

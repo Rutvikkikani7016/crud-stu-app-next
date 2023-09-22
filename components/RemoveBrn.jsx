@@ -16,6 +16,8 @@ export default function RemoveBtn({ id }) {
 
             if (res.ok) {
                 router.push('/');
+            } else {
+                alert("sum error in delete Data")
             }
         }
     }
